@@ -1,131 +1,75 @@
-# Ecobaby AR Rebuild
+# React + TypeScript + Vite
 
-> A modern reconstruction of a real-world WebAR application originally developed in 2018 for Ecobaby 5D.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Overview
+Currently, two official plugins are available:
 
-This project recreates, using modern web technologies, an augmented reality experience that allowed expectant parents to securely view 3D ultrasound models directly from their mobile browser.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-The original application was built in 2018 as a commercial product for **Ecobaby 5D**. This repository is a complete rewrite from scratch for educational and portfolio purposes.
+## React Compiler
 
-Its goal is not to reproduce the original implementation, but to demonstrate how the same product would be designed and developed today.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## Objectives
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-This project showcases my ability to:
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-* Design products around real user needs.
-* Build browser-based augmented reality experiences.
-* Implement secure authentication and authorization.
-* Deliver intuitive user experiences for non-technical users.
-* Document architectural decisions and development process.
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
----
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 
-## Features
-
-* Secure user authentication
-* Personal gallery of 3D models
-* Browser-based augmented reality viewer
-* Responsive interface
-* Share captured images
-* Modern development workflow
-
----
-
-## Tech Stack
-
-### Frontend
-
-* React
-* TypeScript
-* Vite
-* A-Frame
-
-### Backend
-
-* Node.js
-* Express
-
-### Authentication
-
-* JWT
-
-### Database
-
-* SQLite
-
----
-
-## Project Status
-
-🚧 Work in progress
-
-This project is currently being rebuilt as part of my professional portfolio.
-
-Progress can be followed through commits, issues and project documentation.
-
----
-
-## Repository Structure
-
-```text
-src/
-docs/
-public/
-
-README.md
-LICENSE
 ```
 
----
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Documentation
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-Project documentation can be found inside the `docs` directory.
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 
-It includes:
-
-* Original case study
-* Rebuild plan
-* Architecture
-* Design decisions
-* Development diary
-* Lessons learned
-
----
-
-## Running locally
-
-```bash
-npm install
-npm run dev
 ```
-
----
-
-## Disclaimer
-
-This repository is a modern reconstruction of a real-world project originally developed for Ecobaby 5D.
-
-All source code has been written from scratch.
-
-No proprietary code, confidential information, medical data or company assets from the original project are included in this repository.
-
-Any 3D models included are demonstration assets only.
-
----
-
-## License
-
-Apache License 2.0
-
----
-
-## About
-
-If you're interested in product engineering, WebAR, 3D graphics or user-centered software development, feel free to explore the code or get in touch.
-
-Portfolio: https://www.ramensoft.dev
