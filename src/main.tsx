@@ -3,9 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { RouterProvider } from 'react-router';
 import { router } from './router.tsx';
+import { SessionProvider } from './providers/SessionProvider.tsx';
 
 createRoot(document.getElementById('root')!).render(
-	<StrictMode>
-		<RouterProvider router={router}></RouterProvider>
-	</StrictMode>,
+	<SessionProvider>
+		<StrictMode>
+			<RouterProvider router={router}></RouterProvider>
+		</StrictMode>
+	</SessionProvider>,
 );

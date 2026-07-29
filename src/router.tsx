@@ -3,6 +3,7 @@ import App from './App';
 import { ViewerPage } from './pages/ViewerPage';
 import { TestPage } from './pages/TestPage';
 import { AppLayout } from './AppLayout';
+import { GalleryPage } from './pages/GalleryPage';
 
 export const router = createBrowserRouter([
 	{
@@ -14,12 +15,8 @@ export const router = createBrowserRouter([
 				element: <App />,
 			},
 			{
-				path: '/login',
-				element: <p>login</p>,
-			},
-			{
 				path: '/gallery',
-				element: <p>gallery</p>,
+				element: <GalleryPage />,
 			},
 			{
 				path: '/viewer/:modelId',
@@ -28,6 +25,10 @@ export const router = createBrowserRouter([
 			{
 				path: '/test',
 				element: <TestPage />,
+			},
+			{
+				path: '*',
+				element: <p>Pagina no encontrada</p>,
 			},
 		],
 	},
