@@ -1,0 +1,226 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.4.1",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5125,
+      "count": 1282362,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 72684,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 1
+    },
+    {
+      "name": "Object.1-Mesh_0_positions",
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 213444,
+      "max": [
+        27295,
+        17950,
+        32767
+      ],
+      "min": [
+        -27251,
+        -18014,
+        -32767
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 2
+    },
+    {
+      "name": "Object.1-Mesh_1_positions",
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 12348,
+      "max": [
+        27095,
+        18014,
+        32615
+      ],
+      "min": [
+        -27295,
+        -17914,
+        -32559
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 3
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 5129448,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 506640,
+          "mode": "TRIANGLES",
+          "byteStride": 4,
+          "count": 1282362
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 5129448,
+      "byteLength": 145368,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 506640,
+          "byteLength": 27297,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 72684
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 5274816,
+      "byteLength": 1707552,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 533940,
+          "byteLength": 858212,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 213444
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 6982368,
+      "byteLength": 98784,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 1392152,
+          "byteLength": 48513,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 12348
+        }
+      }
+    }
+  ],
+  "buffers": [
+    {
+      "name": "ecobaby1_2",
+      "uri": "model-optimized.bin",
+      "byteLength": 1440668
+    },
+    {
+      "byteLength": 7081152,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "piel2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.807843,
+          0.709804,
+          0.501961,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    },
+    {
+      "name": "mtl1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.501961,
+          0.682353,
+          0.501961,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object.1-Mesh",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 3
+          },
+          "mode": 4,
+          "material": 1,
+          "indices": 1
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Object.1",
+      "translation": [
+        112.12306213378906,
+        60.700324445962906,
+        111.80345262493938
+      ],
+      "scale": [
+        111.80982862506062,
+        111.80982862506062,
+        111.80982862506062
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ]
+}
