@@ -9,5 +9,6 @@ export const GalleryPage = () => {
 	useEffect(() => {
 		if (!session) navigate('/');
 	}, [session, navigate]);
+
 	return <div>{JSON.stringify(session)}</div>;
 };

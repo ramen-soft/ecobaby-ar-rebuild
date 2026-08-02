@@ -10,7 +10,7 @@ export const ARViewer = () => {
 				<color attach="background" args={['black']} />
 				<pointLight position={[10, 10, 10]} intensity={1} />
 				<ambientLight intensity={0.2} />
-				<ARProvider imageTargets="/markers/eco4.mind">
+				<ARProvider imageTargets="/markers/eco5.mind">
 					<ARAnchor target={0}>
 						<EcoModel />
 						<OrbitControls />

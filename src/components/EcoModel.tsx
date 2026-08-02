@@ -9,5 +9,5 @@ export const EcoModel = () => {
 		const center = box.getCenter(new THREE.Vector3());
 		scene.position.sub(center);
 	}, [scene]);
-	return <primitive object={scene} scale={0.01} />;
+	return <primitive object={scene} scale={0.01} rotation={[0.3, -0.6, Math.PI / 2]} />;
 };

@@ -10,7 +10,7 @@ const App = () => {
 	useEffect(() => {
 		const { user } = Object.fromEntries([...params]);
 		if (user && user.length) {
-			setSession({ patientId: user, studies: ['ab', 'cbc'] });
+			setSession({ patientId: user, studies: ['uno', 'dos', 'tres'] });
 		}
 	}, [params, setSession]);
 
