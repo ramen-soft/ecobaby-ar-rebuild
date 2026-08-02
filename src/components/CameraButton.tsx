@@ -1,5 +1,5 @@
 import { CameraIcon } from '@heroicons/react/24/outline';
-import React, { type MouseEventHandler } from 'react';
+import { type MouseEventHandler } from 'react';
 
 export const CameraButton = ({ onClick }: { onClick: MouseEventHandler }) => {
 	return (
