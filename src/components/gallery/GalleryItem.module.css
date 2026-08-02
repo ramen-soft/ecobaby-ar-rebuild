@@ -1,0 +1,38 @@
+.gallery-item {
+	border-radius: 8px;
+	display: flex;
+	overflow: hidden;
+	box-shadow: 0 0 10px #0006;
+	background-color: white;
+
+	img {
+		overflow: hidden;
+		aspect-ratio: 1;
+		background-color: #0fa3;
+	}
+	.study-info {
+		display: flex;
+		align-items: flex-start;
+		padding-left: 10px;
+		flex-direction: column;
+		padding: 2px 0 6px 10px;
+	}
+	.date {
+		color: #777;
+		font-size: 12px;
+		flex: 1 1 auto;
+	}
+	.badge {
+		background-color: gray;
+		display: inline-block;
+		border-radius: 12px;
+		font-size: 10px;
+		min-width: 24px;
+		padding: 4px;
+		line-height: 1;
+		text-align: center;
+		color: white;
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}

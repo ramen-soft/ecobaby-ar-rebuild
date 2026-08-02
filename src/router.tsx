@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
 				element: <GalleryPage />,
 			},
 			{
-				path: '/viewer/:modelId',
+				path: '/viewer/:patient/:modelId',
 				element: <ViewerPage />,
 			},
 			{

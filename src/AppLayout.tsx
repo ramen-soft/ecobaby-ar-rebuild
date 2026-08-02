@@ -4,7 +4,6 @@ export const AppLayout = () => {
 	return (
 		<div>
 			<Outlet />
-			<footer>&reg; 2026</footer>
 		</div>
 	);
 };

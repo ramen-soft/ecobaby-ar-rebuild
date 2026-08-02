@@ -1,9 +1,25 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import { SessionContext } from './SessionContext';
 
+type StudyType = '3d' | '4d';
+
+export interface Patient {
+	id: string;
+	name: string;
+}
+
+export interface Study {
+	thumbnail?: string;
+	name: string;
+	date: string;
+	type: StudyType;
+	model?: string;
+}
+
 export interface Session {
 	patientId: string;
-	studies: string[];
+	patient: Patient;
+	studies: Study[];
 }
 
 export interface SessionContextValue {
