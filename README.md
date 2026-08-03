@@ -16,22 +16,22 @@ Its goal is not to reproduce the original implementation, but to demonstrate how
 
 This project showcases my ability to:
 
-* Design products around real user needs.
-* Build browser-based augmented reality experiences.
-* Implement secure authentication and authorization.
-* Deliver intuitive user experiences for non-technical users.
-* Document architectural decisions and development process.
+- Design products around real user needs.
+- Build browser-based augmented reality experiences.
+- Implement secure authentication and authorization.
+- Deliver intuitive user experiences for non-technical users.
+- Document architectural decisions and development process.
 
 ---
 
 ## Features
 
-* Secure user authentication
-* Personal gallery of 3D models
-* Browser-based augmented reality viewer
-* Responsive interface
-* Share captured images
-* Modern development workflow
+- Secure user authentication
+- Personal gallery of 3D models
+- Browser-based augmented reality viewer
+- Responsive interface
+- Share captured images
+- Modern development workflow
 
 ---
 
@@ -39,29 +39,31 @@ This project showcases my ability to:
 
 ### Frontend
 
-* React
-* TypeScript
-* Vite
-* A-Frame
+- React
+- TypeScript
+- Vite
+- A-Frame
 
 ### Backend
 
-* Node.js
-* Express
+- Node.js
+- Express
 
 ### Authentication
 
-* JWT
+- JWT
 
 ### Database
 
-* SQLite
+- SQLite
 
 ---
 
 ## Project Status
 
 🚧 Work in progress
+
+Demo: https://ramen-soft.github.io/ecobaby-ar-rebuild/?user=demo
 
 This project is currently being rebuilt as part of my professional portfolio.
 
@@ -88,12 +90,12 @@ Project documentation can be found inside the `docs` directory.
 
 It includes:
 
-* Original case study
-* Rebuild plan
-* Architecture
-* Design decisions
-* Development diary
-* Lessons learned
+- Original case study
+- Rebuild plan
+- Architecture
+- Design decisions
+- Development diary
+- Lessons learned
 
 ---
 
