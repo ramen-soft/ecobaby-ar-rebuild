@@ -1,0 +1,174 @@
+{
+  "asset": {
+    "generator": "glTF-Transform v4.4.2",
+    "version": "2.0"
+  },
+  "accessors": [
+    {
+      "type": "SCALAR",
+      "componentType": 5123,
+      "count": 59262,
+      "normalized": false,
+      "byteOffset": 0,
+      "bufferView": 0
+    },
+    {
+      "name": "mmGroup0_1_0_normals",
+      "type": "VEC3",
+      "componentType": 5120,
+      "count": 9865,
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 1
+    },
+    {
+      "name": "mmGroup0_1_0_positions",
+      "type": "VEC3",
+      "componentType": 5122,
+      "count": 9865,
+      "max": [
+        23690,
+        27003,
+        32767
+      ],
+      "min": [
+        -23690,
+        -27003,
+        -32767
+      ],
+      "normalized": true,
+      "byteOffset": 0,
+      "bufferView": 2
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 1,
+      "byteOffset": 0,
+      "byteLength": 118524,
+      "target": 34963,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 0,
+          "byteLength": 22985,
+          "mode": "TRIANGLES",
+          "byteStride": 2,
+          "count": 59262
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 118524,
+      "byteLength": 39460,
+      "target": 34962,
+      "byteStride": 4,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 22988,
+          "byteLength": 17431,
+          "mode": "ATTRIBUTES",
+          "filter": "OCTAHEDRAL",
+          "byteStride": 4,
+          "count": 9865
+        }
+      }
+    },
+    {
+      "buffer": 1,
+      "byteOffset": 157984,
+      "byteLength": 78920,
+      "target": 34962,
+      "byteStride": 8,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "buffer": 0,
+          "byteOffset": 40420,
+          "byteLength": 46016,
+          "mode": "ATTRIBUTES",
+          "byteStride": 8,
+          "count": 9865
+        }
+      }
+    }
+  ],
+  "buffers": [
+    {
+      "name": "cuerpo",
+      "uri": "cuerpo_opt.bin",
+      "byteLength": 86436
+    },
+    {
+      "byteLength": 236904,
+      "extensions": {
+        "EXT_meshopt_compression": {
+          "fallback": true
+        }
+      }
+    }
+  ],
+  "materials": [
+    {
+      "name": "default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "mmGroup0_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "mode": 4,
+          "material": 0,
+          "indices": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "mmGroup0",
+      "translation": [
+        13.410327911376953,
+        5.539543151855469,
+        98.7573236823082
+      ],
+      "scale": [
+        97.16885429620743,
+        97.16885429620743,
+        97.16885429620743
+      ],
+      "mesh": 0
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "extensionsUsed": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ],
+  "extensionsRequired": [
+    "EXT_meshopt_compression",
+    "KHR_mesh_quantization"
+  ]
+}
